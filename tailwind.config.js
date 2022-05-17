@@ -4,7 +4,9 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'purple': '#824D8F'
+      'heroPink': '#eda4a4',
+      'heroGrey': '#2e2b2f',
+      'heroSand': '#FCE620'
     },
     extend: {},
   },

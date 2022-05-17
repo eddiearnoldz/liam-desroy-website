@@ -14,7 +14,7 @@ const Contact = () => {
 
     e.preventDefault();
     send(
-      '9PocketsRecords',
+      'Liam',
       'template_ac764uk',
       toSend,
       'gWfY7gMc4qo9a3kBt'
@@ -41,41 +41,41 @@ const Contact = () => {
 
   return (
     <>
-      <div className="grid place-items-center h-full">
-        <div className='p-6 max-w-2xl content-center'>
+      <div className="mt-20 grid place-items-center h-full">
+        <div className='p-6 content-center max-w-3xl'>
           <form onSubmit={onSubmit} >
-            <div className="grid grid-cols-2 gap-5">
-              <div className="flex flex-col col-span-2">
-                <h1 className=" text-xl font-bold text-center ">Let me know what you're creating and how i can help</h1>
+            <div className="grid grid-cols-4 gap-5">
+              <div className="flex flex-col col-span-4">
+                <h1 className=" text-xl font-bold text-center ">Let me know what you're creating and how we can bring it to life</h1>
               </div>
-              <div className="flex flex-col sm:col-span-1 col-span-2">
+              <div className="flex flex-col sm:col-span-2 col-span-4">
                 <input 
                   type="text" 
                   placeholder="Name"
-                  className="form-input px-3 py-2 rounded-md text-black border-2 border-purple outline-none"
+                  className="form-input px-3 py-2 rounded-md text-black bg-heroPink border-x-2 border-purple outline-none placeholder:text-heroSand"
                   id="name" 
                   name='from_name'
                   required="true"
                   value={toSend.from_name}
                   onChange={handleChange} />
               </div>
-              <div className="flex flex-col sm:col-span-1 col-span-2">
+              <div className="flex bg-sand flex-col sm:col-span-2 col-span-4">
                 <input 
                   type="text" 
                   placeholder="Email"
-                  className="form-input px-3 py-2 rounded-md text-blackbg-transparent  outline-none border-2 border-purple"
+                  className="form-input px-3 py-2 text-purple bg-heroPink outline-none border-y-2 rounded-md border-purple placeholder:text-heroSand"
                   id="email" 
                   name='from_email'
                   required="true"
                   value={toSend.from_email}
                   onChange={handleChange} />
               </div>
-              <div className="flex flex-col col-span-2 outine-none">
+              <div className="flex flex-col col-span-4 outine-none">
                 <textarea 
-                  type="textarea" 
-                  className="form-input px-3 py-2 rounded-md text-black outine-none border-2 border-purple"
+                  type="text" 
+                  className="form-input px-3 py-2 rounded-md placeholder:text-heroSand outline-none border-x-2 bg-heroPink border-purple"
                   id="text"
-                  rows={5}
+                  rows={4}
                   cols={5}
                   name='text'
                   placeholder="Whats good?"
@@ -83,13 +83,13 @@ const Contact = () => {
                   value={toSend.text}
                   onChange={handleChange} />
               </div>
-              <div className="flex flex-col space-between col-span-2 max-w-100 items-center">
-                <button className="flex mt-3 hover:scale-105 duration-300" type="submit" name="action"><img className="h-5 animate-pulse" src={rec} alt='rec'/>Hit Play</button>
+              <div className="flex flex-col space-between col-span-4 max-w-100 items-center">
+                <button className="flex mt-3 hover:scale-105 duration-500" type="submit" name="action"><img className="h-5" src={rec} alt='rec'/>Hit Play</button>
               </div>
-              <div className="flex flex-col col-span-2 items-center text-sm gap-1">
-              <button className="cursor-pointer"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liam@liamdesroy.com</button>
-              <a target="_blank" href="https://www.greasywafflefilms.com">Greasy Waffle Films</a>
-              <a target="_blank" href="https://vimeo.com/liamdesroy">Vimeo</a>
+              <div className="flex flex-col col-span-4 items-center text-sm gap-1">
+              <button className="cursor-pointer hover:text-heroSand duration-300"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liam@liamdesroy.com</button>
+              <a className="hover:text-heroSand duration-300" href="https://www.greasywafflefilms.com">Greasy Waffle Films</a>
+              <a className="hover:text-heroSand duration-300" href="https://vimeo.com/liamdesroy">Vimeo</a>
               </div>
             </div>
           </form>
