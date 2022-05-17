@@ -51,7 +51,7 @@ const Contact = () => {
               <div className="flex flex-col sm:col-span-2 col-span-4">
                 <input 
                   type="text" 
-                  placeholder="Name"
+                  placeholder="name"
                   className="form-input px-3 py-2 rounded-md text-black bg-heroPink border-x-2 border-purple outline-none placeholder:text-heroSand"
                   id="name" 
                   name='from_name'
@@ -62,7 +62,7 @@ const Contact = () => {
               <div className="flex bg-sand flex-col sm:col-span-2 col-span-4">
                 <input 
                   type="text" 
-                  placeholder="Email"
+                  placeholder="email"
                   className="form-input px-3 py-2 text-purple bg-heroPink outline-none border-y-2 rounded-md border-purple placeholder:text-heroSand"
                   id="email" 
                   name='from_email'
@@ -78,15 +78,15 @@ const Contact = () => {
                   rows={4}
                   cols={5}
                   name='text'
-                  placeholder="Whats good?"
+                  placeholder="what we making?"
                   required="true"
                   value={toSend.text}
                   onChange={handleChange} />
               </div>
               <div className="flex flex-col space-between col-span-4 max-w-100 items-center">
-                <button className="flex mt-3 hover:scale-105 duration-500" type="submit" name="action"><img className="h-5" src={rec} alt='rec'/>Hit Play</button>
+                <button className="flex mt-3 hover:scale-105 duration-500 items-center p-2 text-lg" type="submit" name="action"><img className="h-4" src={rec} alt='rec'/>Hit Play</button>
               </div>
-              <div className="flex flex-col col-span-4 items-center text-sm gap-1">
+              <div className="flex flex-col col-span-4 items-center text-md gap-1">
               <button className="cursor-pointer hover:text-heroSand duration-300"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liam@liamdesroy.com</button>
               <a className="hover:text-heroSand duration-300" href="https://www.greasywafflefilms.com">Greasy Waffle Films</a>
               <a className="hover:text-heroSand duration-300" href="https://vimeo.com/liamdesroy">Vimeo</a>

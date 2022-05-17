@@ -6,7 +6,7 @@ module.exports = {
     colors: {
       'heroPink': '#eda4a4',
       'heroGrey': '#2e2b2f',
-      'heroSand': '#FCE620'
+      'heroSand': '#f5e942'
     },
     extend: {},
   },
