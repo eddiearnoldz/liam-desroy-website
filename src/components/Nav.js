@@ -11,8 +11,11 @@ function Nav() {
 
   return (
   <nav className="flex justify-between items-center h-24 max-w-[1240px] mx-auto text-heroGrey">
-  <h1 className="px-5 text-3xl font-bold text-heroGrey hover:scale-105 duration-500"><Link to='/'>
-  Liam Desroy.</Link></h1>
+  <h1 className="px-5 text-3xl font-bold text-heroGrey hover:scale-105 duration-500"><Link to='/'><div>
+<h1>Liam Desroy.</h1>
+<h1>director</h1>
+  </div>
+  </Link></h1>
   <ul className="md:flex hidden">
     <li className="px-5 text-lg hover:scale-105 hover:text-heroSand duration-300"><Link to='/about'>about</Link></li>
     <li className="px-5 text-lg hover:scale-105 hover:text-heroSand duration-300"><Link to='/contact'>contact</Link></li>
