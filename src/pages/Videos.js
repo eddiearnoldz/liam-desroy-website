@@ -18,15 +18,15 @@ import sepa from '../images/percival-sepa.png';
 
 
 const videos = [
-  {image: percival, url:"https://vimeo.com/710751949", text: 'Pericval'},
-  {image: april, url:  "https://vimeo.com/710753842", text: 'Modern Love'},
-  {image: champion, url: "https://vimeo.com/377951727", text: 'Modern Love'},
-  {image: us, url: "https://vimeo.com/673592625", text: 'Modern Love'},
-  {image: potions, url: "https://vimeo.com/678279129", text: 'Modern Love'},
-  {image: follow, url: "https://vimeo.com/710756878", text: 'Modern Love'},
-  {image: dio, url: "https://vimeo.com/673588688", text: 'Modern Love'},
-  {image: mulimba, url:"https://vimeo.com/710750869", text: 'Modern Love'},
-  {image: sepa, url: "https://vimeo.com/710756878", text: 'Modern Love'}
+  {image: sepa, url:"https://vimeo.com/710751949", text: 'Pericval'},
+  {image: percival, url:  "https://vimeo.com/710753842", text: 'Percival'},
+  {image: dio, url: "https://vimeo.com/377951727", text: 'Dead In October'},
+  {image: potions, url: "https://vimeo.com/673592625", text: 'Leap: Potions'},
+  {image: follow, url: "https://vimeo.com/678279129", text: 'Modern Love: Follow You'},
+  {image: sepa, url: "https://vimeo.com/710756878", text: 'Percival'},
+  {image: us, url: "https://vimeo.com/673588688", text: 'Modern Love: Us'},
+  {image: april, url:"https://vimeo.com/710750869", text: 'April'},
+  {image: mulimba, url: "https://vimeo.com/710756878", text: 'Mulimba'}
 ]
 
 const Videos = () => {
@@ -45,17 +45,17 @@ const Videos = () => {
         <div className="p-1">
         <Video url={isOpen}/>
         <button onClick={()=>setIsOpen(false)}>Back to videos</button>
-        </div> : <h1 className="mt-10">Work</h1>}
+        </div> : null}
     </div>
-     <div className="container h-full max-w-4xl w-full justify-center">
-      <div className="grid md:grid-cols-3 grid-cols-1 p-5 h-full">
+     <div className="grid h-full justify-center min-w-full">
+      <div className="grid max-w-4xl md:grid-cols-3 grid-cols-1 h-full p-2">
         {videos.map((image, index) => {
           return (
             <>
-            <div className="relative h-auto w-auto rounded-lg cursor-pointer object-fit m-auto p-1">
-              <img key={index} id={image.url} onClick={handleVideoLoad} className="rounded-md" src={image.image} alt='gif'/>
-              <div className="absolute top-1/2 left-1/2 text-center">
-              <h1 className="text-xl font-bold  text-heroSand">{image.text}</h1>
+            <div className="relative h-auto w-auto rounded-lg cursor-pointer m-auto p-3 hover:opacity-80 duration-300">
+              <img key={index} id={image.url} onClick={handleVideoLoad} className=" object-cover object-center rounded-lg" src={image.image} alt='gif'/>
+              <div className="absolute bottom-2/4 w-[100%] justify-center align-center ">
+              <h1 className="text-xl font-bold text-center  text-heroSand">{image.text}</h1>
               </div>
             </div>
             </>
