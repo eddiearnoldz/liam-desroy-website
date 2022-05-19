@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import Video from '../components/Video';
+import ReactPlayer from 'react-player';
 
 //import images
 import gif from '../gifs/Dead in October - Trailer-low.gif'
@@ -26,11 +27,12 @@ const videos = [
   {image: sepa, url: "https://vimeo.com/710756878", text: 'Percival'},
   {image: us, url: "https://vimeo.com/673588688", text: 'Modern Love: Us'},
   {image: april, url:"https://vimeo.com/710750869", text: 'April'},
-  {image: mulimba, url: "https://vimeo.com/710756878", text: 'Mulimba'}
+  {image: mulimba, url: "https://vimeo.com/673634183", text: 'Mulimba'}
 ]
 
 const Videos = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false)
 
   const handleVideoLoad = (e) => {
     e.preventDefault();
@@ -40,12 +42,11 @@ const Videos = () => {
 
   return (
     <>
-    <div className="text-center">
-      {isOpen ? 
-        <div className="p-1">
+    <div className={isOpen ? "text-center" : "hidden" }>
+      <div className="p-1">
         <Video url={isOpen}/>
+      </div>
         <button onClick={()=>setIsOpen(false)}>Back to videos</button>
-        </div> : null}
     </div>
   
     <div className="grid h-full justify-center min-w-full">
