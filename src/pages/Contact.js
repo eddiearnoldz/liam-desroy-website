@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { send } from 'emailjs-com';
-import rec from '../images/record-icon-png-8.jpg'
+import rec from '../record-icon-png-8.jpg'
 
 const Contact = () => {
 

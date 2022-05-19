@@ -6,4 +6,5 @@ html {
   font-family: 'Khand', sans-serif;
   background: #eda4a4;
   color: #2e2b2f;
+  z-index: 0;
 }

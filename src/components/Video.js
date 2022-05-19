@@ -3,7 +3,7 @@ import ReactPlayer from 'react-player'
 
 const Video = ({url}) => {
   return (
-    <div className='realtive pt-[56.25%]'>
+    <div className='relative pt-[56.25%]'>
       <div className='absolute'>
         <ReactPlayer
         url={url}
