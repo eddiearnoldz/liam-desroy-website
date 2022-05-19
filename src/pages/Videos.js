@@ -22,7 +22,7 @@ const videos = [
   {image: percival, url:  "https://vimeo.com/710753842", text: 'Percival'},
   {image: dio, url: "https://vimeo.com/377951727", text: 'Dead In October'},
   {image: potions, url: "https://vimeo.com/673592625", text: 'Leap: Potions'},
-  {image: follow, url: "https://vimeo.com/678279129", text: 'Modern Love: Follow You'},
+  {image: follow, url: "https://vimeo.com/678279129", text: 'Modern Love'},
   {image: sepa, url: "https://vimeo.com/710756878", text: 'Percival'},
   {image: us, url: "https://vimeo.com/673588688", text: 'Modern Love: Us'},
   {image: april, url:"https://vimeo.com/710750869", text: 'April'},
@@ -49,13 +49,13 @@ const Videos = () => {
     </div>
   
     <div className="grid h-full justify-center min-w-full">
-      <div className="grid max-w-4xl sm:grid-cols-3 grid-cols-1 h-full p-2">
+      <div className="container grid max-w-4xl sm:grid-cols-3 grid-cols-2 h-full">
         {videos.map((image, index) => {
           return (
             <>
-            <div className="relative h-auto w-auto rounded-lg cursor-pointer m-auto m-3 hover:opacity-80 duration-300">
-              <img key={index} id={image.url} onClick={handleVideoLoad}  className="object-cover object-center rounded-lg h-auto w-auto" src={image.image} alt='gif'/>
-              <div className="absolute bottom-2/4 w-[100%] ">
+            <div className="relative h-auto w-auto rounded-lg cursor-pointer hover:opacity-80 duration-300 p-2">
+              <img key={index} id={image.url} onClick={handleVideoLoad}  className="object-cover object-center rounded-lg h-[100%] w-[100%]" src={image.image} alt='gif'/>
+              <div className="absolute bottom-2/4 w-[100%]">
               <h1 className="text-xl font-bold text-center  text-heroSand">{image.text}</h1>
               </div>
             </div>
