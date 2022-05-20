@@ -1,10 +1,7 @@
 import React, {useState} from 'react';
-import { Link } from 'react-router-dom';
 import Video from '../components/Video';
-import ReactPlayer from 'react-player';
 
 //import images
-import gif from '../gifs/Dead in October - Trailer-low.gif'
 import april from '../images/April.png';
 import percival from '../images/Percival.png';
 import champion from '../images/champion.png';
@@ -19,7 +16,7 @@ import sepa from '../images/percival-sepa.png';
 
 
 const videos = [
-  {image: sepa, url:"https://vimeo.com/710751949", text: 'Pericval'},
+  {image: champion, url:"https://vimeo.com/710751949", text: 'Pericval'},
   {image: percival, url:  "https://vimeo.com/710753842", text: 'Percival'},
   {image: dio, url: "https://vimeo.com/377951727", text: 'Dead In October'},
   {image: potions, url: "https://vimeo.com/673592625", text: 'Leap: Potions'},
@@ -32,7 +29,6 @@ const videos = [
 
 const Videos = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [isLoaded, setIsLoaded] = useState(false)
 
   const handleVideoLoad = (e) => {
     e.preventDefault();
@@ -42,14 +38,15 @@ const Videos = () => {
 
   return (
     <>
-    <div className={isOpen ? "text-center" : "hidden" }>
-      <div className="p-1">
+    <div className="text-center">
+      {isOpen ? 
+        <div className="p-1">
         <Video url={isOpen}/>
-      </div>
         <button onClick={()=>setIsOpen(false)}>Back to videos</button>
+        </div> : null}
     </div>
   
-    <div className="grid h-full justify-center min-w-full">
+    <div className="grid justify-center min-w-full">
       <div className="container grid max-w-4xl sm:grid-cols-3 grid-cols-2 h-full">
         {videos.map((image, index) => {
           return (
@@ -57,13 +54,12 @@ const Videos = () => {
             <div className="relative h-auto w-auto rounded-lg cursor-pointer hover:opacity-80 duration-300 p-2">
               <img key={index} id={image.url} onClick={handleVideoLoad}  className="object-cover object-center rounded-lg h-[100%] w-[100%]" src={image.image} alt='gif'/>
               <div className="absolute bottom-2/4 w-[100%]">
-              <h1 className="text-xl font-bold text-center  text-heroSand">{image.text}</h1>
+              <h1 id={image.url} onClick={handleVideoLoad} className="text-xl font-bold text-center  text-heroSand">{image.text}</h1>
               </div>
             </div>
             </>
           )
         })}
-       
       </div>
       </div>
     </>
@@ -73,13 +69,3 @@ const Videos = () => {
 }
 
 export default Videos
-
-{/* <Video url="https://vimeo.com/710756878"/>
-      <Video url="https://vimeo.com/710753842"/>
-      <Video url="https://vimeo.com/377951727"/>
-      <Video url="https://vimeo.com/673592625"/>
-      <Video url="https://vimeo.com/678279129"/>
-      <Video url="https://vimeo.com/710756878"/>
-      <Video url="https://vimeo.com/673588688"/>
-      <Video url="https://vimeo.com/710750869"/>
-      <Video url="https://vimeo.com/710751949"/> */}
