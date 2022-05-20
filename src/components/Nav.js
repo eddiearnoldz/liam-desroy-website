@@ -8,10 +8,13 @@ function Nav() {
   const handleNav =() => {
     setOpen(!isOpen)
   }
+  const handleLogo = () => {
+    isOpen ? setOpen(!isOpen) : setOpen(isOpen)
+  }
 
   return (
-  <nav className="flex justify-between items-center h-24 max-w-[1240px] mx-auto text-heroGrey z-999 ">
-  <Link to='/'><div className="px-5 text-3xl font-bold text-heroGrey hover:scale-105 duration-300 ml-10">
+  <nav className="flex justify-between items-center md:h-32 h-24 max-w-[1240px] mx-auto text-heroGrey z-999 mt-5">
+  <Link onClick={handleLogo} to='/'><div className="px-5 text-3xl font-bold text-heroGrey hover:scale-105 duration-300 ml-10">
 <h1>Liam Desroy.</h1>
 <h1>director</h1>
   </div>
@@ -23,7 +26,7 @@ function Nav() {
   <div className="block sm:hidden m-10">
   <Hamburger toggled={isOpen} toggle={setOpen} size={24} duration={0.4} rounded color="#2e2b2f" />
   </div>
-  <div className={isOpen ? "text-center top-20 w-full h-full bg-heroSand  ease-in-out duration-500 sm:hidden fixed z-50" : " fixed top-full"}>
+  <div className={isOpen ? "text-center top-28 w-full h-full bg-heroSand bg-opacity-80 ease-in-out duration-500 sm:hidden fixed z-50" : " fixed top-full"}>
   <ul className="text-3xl mt-10">
     <li onClick={handleNav} className="p-4 hover:text-heroPink hover:scale-105 duration-300"><Link to='/about'>about</Link></li>
     <li onClick={handleNav} className="p-4 hover:text-heroPink hover:scale-105 duration-300"><Link to='/contact'>contact</Link></li>
