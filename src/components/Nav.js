@@ -10,8 +10,8 @@ function Nav() {
   }
 
   return (
-  <nav className="flex justify-between items-center h-24 max-w-[1240px] mx-auto text-heroGrey z-999">
-  <Link to='/'><div className="px-5 text-3xl font-bold text-heroGrey hover:scale-105 duration-300 m-10">
+  <nav className="flex justify-between items-center h-24 max-w-[1240px] mx-auto text-heroGrey z-999 ">
+  <Link to='/'><div className="px-5 text-3xl font-bold text-heroGrey hover:scale-105 duration-300 ml-10">
 <h1>Liam Desroy.</h1>
 <h1>director</h1>
   </div>
