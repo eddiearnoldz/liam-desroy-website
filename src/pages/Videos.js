@@ -16,7 +16,7 @@ import sepa from '../images/percival-sepa.png';
 
 
 const videos = [
-  {image: champion, url:"https://vimeo.com/710751949", text: 'Pericval'},
+  {image: champion, url:"https://vimeo.com/710751949", text: 'Champion'},
   {image: percival, url:  "https://vimeo.com/710753842", text: 'Percival'},
   {image: dio, url: "https://vimeo.com/377951727", text: 'Dead In October'},
   {image: potions, url: "https://vimeo.com/673592625", text: 'Leap: Potions'},
@@ -46,8 +46,8 @@ const Videos = () => {
         </div> : null}
     </div>
   
-    <div className="grid justify-center min-w-full mt-20">
-      <div className="container grid max-w-4xl sm:grid-cols-3 grid-cols-2 h-full">
+    <div className="grid justify-center min-w-full mt-20 overflow-x-hidden">
+      <div className="grid max-w-4xl sm:grid-cols-3 grid-cols-2 h-full">
         {videos.map((image, index) => {
           return (
             <>
