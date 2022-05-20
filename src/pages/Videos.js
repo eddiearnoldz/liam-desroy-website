@@ -46,7 +46,7 @@ const Videos = () => {
         </div> : null}
     </div>
   
-    <div className="grid justify-center min-w-full">
+    <div className="grid justify-center min-w-full mt-20">
       <div className="container grid max-w-4xl sm:grid-cols-3 grid-cols-2 h-full">
         {videos.map((image, index) => {
           return (
