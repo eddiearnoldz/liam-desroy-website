@@ -29,16 +29,16 @@ const videos = [
 
 const Videos = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const [isLoaded, setIsLoaded] = useState([])
+  // const [isLoaded, setIsLoaded] = useState(0)
 
   const handleVideoLoad = (e) => {
     e.preventDefault();
     setIsOpen(e.target.id)
     window.scroll({top:0,behavior:'smooth'})
   }
-  const handleLoadedImage = () => {
-    setIsLoaded(...isLoaded++)
-  }
+  // const handleLoadedImage = () => {
+  //   setIsLoaded(...isLoaded++)
+  // }
 
   return (
     <>
@@ -50,16 +50,16 @@ const Videos = () => {
       <button onClick={()=>setIsOpen(false)}>Back to videos</button>
       </div> : null}
   </div>
-  {isLoaded ? 
+  
   <div className="grid justify-center min-w-full mt-20 overflow-x-hidden">
     <div className="grid max-w-4xl sm:grid-cols-3 grid-cols-2 h-full">
       {videos.map((image, index) => {
         return (
           <>
           <div className="relative h-auto w-auto rounded-lg cursor-pointer hover:opacity-80 duration-300 p-2">
-            <img key={index} id={image.url} onClick={handleVideoLoad} onLoad={handleLoadedImage} className="object-cover object-center rounded-lg h-[100%] w-[100%]" src={image.image} alt='gif'/>
+            <img key={index} id={image.url} onClick={handleVideoLoad} className="object-cover object-center rounded-lg h-[100%] w-[100%]" src={image.image} alt='gif'/>
             <div className="absolute bottom-2/4 w-[100%]">
-            <h1 id={image.url} onClick={handleVideoLoad} className="text-xl font-bold text-center  text-heroSand">{image.text}</h1>
+            <h1 id={image.url} onClick={handleVideoLoad} className="md:text-2xl text-xl font-bold text-center  text-heroSand">{image.text}</h1>
             </div>
           </div>
           </>
@@ -67,9 +67,6 @@ const Videos = () => {
       })}
     </div>
     </div>
-    :
-    <h1>loading</h1>
-    }
     </>
     
    
