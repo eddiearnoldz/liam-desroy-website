@@ -14,10 +14,10 @@ const Contact = () => {
 
     e.preventDefault();
     send(
-      'Liam',
-      'template_ac764uk',
+      'service_aa1hpes',
+      'template_osu6lju',
       toSend,
-      'gWfY7gMc4qo9a3kBt'
+      'VCoxZiFVhr0fpyRUt'
     ).then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       setToSend({from_name: '',
@@ -42,7 +42,7 @@ const Contact = () => {
   return (
     <>
       <div className="mt-20 grid place-items-center h-full">
-        <div className='p-6 content-center max-w-3xl'>
+        <div className='p-6 content-center'>
           <form onSubmit={onSubmit} >
             <div className="grid grid-cols-4 gap-5">
               <div className="flex flex-col col-span-4">
@@ -59,11 +59,11 @@ const Contact = () => {
                   value={toSend.from_name}
                   onChange={handleChange} />
               </div>
-              <div className="flex bg-sand flex-col sm:col-span-2 col-span-4">
+              <div className="flex flex-col sm:col-span-2 col-span-4">
                 <input 
                   type="text" 
                   placeholder="email"
-                  className="form-input px-3 py-2 text-purple bg-heroPink outline-none border-y-2 rounded-md border-purple placeholder:text-heroSand"
+                  className="form-input px-3 py-2 bg-heroPink outline-none border-y-2 rounded-md border-purple placeholder:text-heroSand"
                   id="email" 
                   name='from_email'
                   required="true"
