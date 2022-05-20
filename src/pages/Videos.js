@@ -56,10 +56,10 @@ const Videos = () => {
       {videos.map((image, index) => {
         return (
           <>
-          <div key={index} className="relative h-[200px] rounded-lg cursor-pointer hover:opacity-80 duration-300 p-2">
+          <div key={index} className="relative h-[180px] rounded-lg cursor-pointer hover:opacity-80 duration-300 p-2">
             <img key={index} id={image.url} onClick={handleVideoLoad} className="object-cover object-center rounded-lg h-[100%] w-[100%]" src={image.image} alt='gif'/>
-            <div className="absolute bottom-2/4 w-[100%]">
-            <h1 id={image.url} onClick={handleVideoLoad} className="md:text-2xl text-xl font-bold text-center  text-heroSand">{image.text}</h1>
+            <div className="absolute bottom-1/2 w-[100%] tracking-widest">
+            <h1 id={image.url} onClick={handleVideoLoad} className="md:text-2xl text-xl font-bold text-center text-heroSand">{image.text}</h1>
             </div>
           </div>
           </>
