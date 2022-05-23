@@ -9,8 +9,8 @@ import wonderland from '../images/wonderland-quote.png'
 const About = () => {
   return (
     <div className='grid place-items-center h-full w-full'>
-      <div className="content-center m-2 mt-10">
-        <img className="rounded-md h-80 m-auto" src={liam} alt='liam'/>
+      <div className="content-center m-3 mt-10">
+        <img className="rounded-md w-96 m-auto" src={liam} alt='liam'/>
         <p className="text-center mt-10">      
           Award winning filmmaker from Bradford, West Yorkshire; based in London.
         </p>
