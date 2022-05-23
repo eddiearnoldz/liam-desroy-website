@@ -7,7 +7,7 @@ const Video = ({url, onReady}) => {
   return (
 <>
     <div className= 'p-3 h-full w-full'>
-      <div className=' hover:scale-105 duration-300 h-[300px]'>
+      <div className='h-[300px]'>
         <ReactPlayer
         url={url}
         width='100%'
