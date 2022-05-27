@@ -89,7 +89,7 @@ const Contact = () => {
               <div className="flex flex-col col-span-4 items-center text-md gap-1">
               <button className="cursor-pointer hover:text-heroSand duration-300"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liam@liamdesroy.com</button>
               
-              <a className="hover:text-heroSand duration-300" href="https://vimeo.com/liamdesroy"><img className="h-[3%]" src={insta} alt=""/></a>
+              <a className="hover:text-heroSand duration-300" href="https://vimeo.com/liamdesroy"><img className="h-[5%]" src={insta} alt=""/></a>
               </div>
             </div>
           </form>
