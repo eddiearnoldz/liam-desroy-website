@@ -6,5 +6,7 @@ body {
   font-family: 'Khand', sans-serif;
   background: #eda4a4;
   color: #2e2b2f;
-  /* z-index: 0; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }

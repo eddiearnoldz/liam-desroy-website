@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { send } from 'emailjs-com';
-import rec from '../images/record-icon-png-8.jpg'
+import rec from '../images/record-icon-png-8.jpg';
+import insta from '../images/instagram-black.png';
 
 const Contact = () => {
 
@@ -41,14 +42,13 @@ const Contact = () => {
 
   return (
     <>
-      <div className="mt-20 grid place-items-center h-full">
-        <div className='p-6 content-center'>
+      <div className="mt-20 grid place-items-center h-full w-full ">
           <form onSubmit={onSubmit} >
-            <div className="grid grid-cols-4 gap-5">
+            <div className="p-5 grid grid-cols-4 gap-5 max-w-xl">
               <div className="flex flex-col col-span-4">
                 <h1 className=" text-xl font-bold text-center ">Let me know what you're creating and how we can bring it to life</h1>
               </div>
-              <div className="flex flex-col sm:col-span-2 col-span-4">
+              <div className="flex flex-col sm:col-span-2 col-span-4 ">
                 <input 
                   type="text" 
                   placeholder="name"
@@ -83,18 +83,17 @@ const Contact = () => {
                   value={toSend.text}
                   onChange={handleChange} />
               </div>
-              <div className="flex flex-col space-between col-span-4 max-w-100 items-center">
+              <div className="flex flex-col space-between col-span-4 max-w-4xl items-center">
                 <button className="flex mt-3 hover:scale-105 duration-500 items-center p-2 text-lg" type="submit" name="action"><img className="h-4" src={rec} alt='rec'/>Hit Play</button>
               </div>
               <div className="flex flex-col col-span-4 items-center text-md gap-1">
               <button className="cursor-pointer hover:text-heroSand duration-300"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liam@liamdesroy.com</button>
-              <a className="hover:text-heroSand duration-300" href="https://www.greasywafflefilms.com">Greasy Waffle Films</a>
-              <a className="hover:text-heroSand duration-300" href="https://vimeo.com/liamdesroy">Vimeo</a>
+              
+              <a className="hover:text-heroSand duration-300" href="https://vimeo.com/liamdesroy"><img className="h-[3%]" src={insta} alt=""/></a>
               </div>
             </div>
           </form>
         </div>
-      </div>
     </>
     )
   }

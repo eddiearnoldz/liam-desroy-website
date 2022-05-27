@@ -15,7 +15,7 @@ const About = () => {
           Award winning filmmaker from Bradford, West Yorkshire; based in London
         </p>
         <p className="text-center mt-2 font-semibold md:text-xl text-lg">
-          Camera-op; Editor; Colourist; AD; Writer; Director
+        Director; Writer; AD; Editor; Colourist; Cam-Op & Kit
         </p>
         <p className="text-center mt-2 md:text-xl text-lg">
           Get in touch and I'll bang the kettle on 

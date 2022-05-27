@@ -16,7 +16,7 @@ function Nav() {
   <nav className="flex justify-between items-center md:h-32 h-24 max-w-[1240px] mx-auto text-heroGrey z-999 mt-5">
   <Link onClick={handleLogo} to='/'><div className="px-5 text-3xl font-bold text-heroGrey hover:scale-105 duration-300 ml-10">
 <h1>Liam Desroy.</h1>
-<h1>director</h1>
+<h1>Filmmaker</h1>
   </div>
   </Link>
   <ul className="sm:flex hidden m-10">
