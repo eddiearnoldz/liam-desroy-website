@@ -4,7 +4,11 @@
 
 body {
   font-family: 'Khand', sans-serif;
-  background: #eda4a4;
+  background-image: url("./images/background.png");
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #eda4a4;
   color: #2e2b2f;
   padding: 0;
   margin: 0;
