@@ -10,7 +10,6 @@ import potions from '../images/potions.png';
 import follow from '../images/modern-love-follow.png';
 import dio from '../images/DIO.png';
 import mulimba from '../images/mulimba.png';
-import sepa from '../images/percival-sepa.png';
 
 
 
