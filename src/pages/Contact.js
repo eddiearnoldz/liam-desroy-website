@@ -87,7 +87,7 @@ const Contact = () => {
                 <button className="flex mt-3 hover:scale-105 duration-500 items-center p-2 text-lg" type="submit" name="action"><img className="h-4" src={rec} alt='rec'/>Hit Play</button>
               </div>
               <div className="flex flex-col col-span-4 items-center text-md gap-1">
-              <button className="cursor-pointer hover:text-heroSand duration-300"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liam@liamdesroy.com</button>
+              <button className="cursor-pointer hover:text-heroSand duration-300"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liamdesroy@gmail.com</button>
               <a className="hover:scale-105 duration-300" href="https://www.instagram.com/liamdesroy/"><img className="h-10 mt-3" src={insta} alt=""/></a>
               </div>
             </div>
