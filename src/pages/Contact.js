@@ -55,7 +55,7 @@ const Contact = () => {
                   className="form-input px-3 py-2 rounded-md text-black bg-heroPink border-x-2 border-purple outline-none placeholder:text-heroSand"
                   id="name" 
                   name='from_name'
-                  required="true"
+                  required={true}
                   value={toSend.from_name}
                   onChange={handleChange} />
               </div>
@@ -66,20 +66,20 @@ const Contact = () => {
                   className="form-input px-3 py-2 bg-heroPink outline-none border-y-2 rounded-md border-purple placeholder:text-heroSand"
                   id="email" 
                   name='from_email'
-                  required="true"
+                  required={true}
                   value={toSend.from_email}
                   onChange={handleChange} />
               </div>
               <div className="flex flex-col col-span-4 outine-none">
                 <textarea 
                   type="text" 
-                  className="form-input px-3 py-2 rounded-md placeholder:text-heroSand outline-none border-x-2 bg-heroPink border-purple"
+                  className="form-input px-3 py-2 rounded-md placeholder:text-heroSand outline-none border-x-2 bg-heroPink border-purple resize-none"
                   id="text"
                   rows={4}
                   cols={5}
                   name='text'
                   placeholder="what we making?"
-                  required="true"
+                  required={true}
                   value={toSend.text}
                   onChange={handleChange} />
               </div>
