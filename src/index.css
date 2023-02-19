@@ -6,13 +6,12 @@ body {
   font-family: 'Khand', sans-serif;
   background-image: url("./images/background-mobile.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-color: #eda4a4;
   color: #2e2b2f;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  width:100vw;
   height: 100vh;
 }
 

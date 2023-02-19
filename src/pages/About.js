@@ -8,7 +8,7 @@ import ramsgate from '../images/ramsgate-selection.png'
 const About = () => {
   return (
     <>
-    <div className='grid place-items-center h-full w-full'>
+    <div className='grid place-items-center h-full w-full mt-20'>
       <div className="content-center mx-3 mt-10 ">
         <img className="rounded-md w-96 m-auto" src={liam} alt='liam'/>
         <p className="text-center mt-10 md:text-xl text-lg">      
