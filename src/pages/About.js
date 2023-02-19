@@ -7,6 +7,7 @@ import ramsgate from '../images/ramsgate-selection.png'
 
 const About = () => {
   return (
+    <>
     <div className='grid place-items-center h-full w-full'>
       <div className="content-center mx-3 mt-10 ">
         <img className="rounded-md w-96 m-auto" src={liam} alt='liam'/>
@@ -32,6 +33,7 @@ const About = () => {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

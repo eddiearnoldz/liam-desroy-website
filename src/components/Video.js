@@ -7,7 +7,7 @@ const Video = ({url, onReady}) => {
   return (
 <>
     <div className= 'p-3 h-full w-full'>
-      <div className='h-[300px]'>
+      <div className='sm:h-[400px] h-[300px]'>
         <ReactPlayer
         url={url}
         width='100%'

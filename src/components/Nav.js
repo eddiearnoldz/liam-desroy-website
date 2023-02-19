@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom';
 import { Turn as Hamburger } from 'hamburger-react';
-import '../App.css'
 
 function Nav() {
   const [isOpen, setOpen] = useState(false)

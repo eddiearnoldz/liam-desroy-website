@@ -4,8 +4,7 @@
 
 body {
   font-family: 'Khand', sans-serif;
-  background-image: url("./images/background.png");
-  /* background-position: center center; */
+  background-image: url("./images/background-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #eda4a4;
@@ -13,4 +12,13 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+@media screen and (min-width:768px) {
+  body {
+    background-image: url("./images/background.png");
+    width:100vw;
+    height: 100vw;
+    background-size: contain;
+  }
 }
