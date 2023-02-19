@@ -4,9 +4,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      'heroPink': '#eda4a4',
+      'heroPink': '#EAA5A5',
       'heroGrey': '#2e2b2f',
-      'heroSand': '#ffe0a0'
+      'heroSand': '#ffe0a0',
+      'heroCream':'#FDF0DA',
+      'black':'#000'
     },
     extend: { 
       aspectRatio: {

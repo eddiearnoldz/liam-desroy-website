@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { send } from 'emailjs-com';
-import rec from '../images/record-icon-png-8.jpg';
-import insta from '../images/instagram-black.png';
+import playButton from '../images/play-button.png';
+import insta from '../images/instagram.svg';
 
 const Contact = () => {
 
@@ -52,7 +52,7 @@ const Contact = () => {
                 <input 
                   type="text" 
                   placeholder="name"
-                  className="form-input px-3 py-2 rounded-md text-black bg-heroPink border-x-2 border-purple outline-none placeholder:text-heroSand"
+                  className="form-input px-3 py-2 rounded-md text-black bg-heroPink border-x-2 border-purple outline-none placeholder:text-black"
                   id="name" 
                   name='from_name'
                   required={true}
@@ -63,7 +63,7 @@ const Contact = () => {
                 <input 
                   type="text" 
                   placeholder="email"
-                  className="form-input px-3 py-2 bg-heroPink outline-none border-y-2 rounded-md border-purple placeholder:text-heroSand"
+                  className="form-input px-3 py-2 bg-heroPink outline-none border-y-2 rounded-md border-purple placeholder:text-black"
                   id="email" 
                   name='from_email'
                   required={true}
@@ -73,7 +73,7 @@ const Contact = () => {
               <div className="flex flex-col col-span-4 outine-none">
                 <textarea 
                   type="text" 
-                  className="form-input px-3 py-2 rounded-md placeholder:text-heroSand outline-none border-x-2 bg-heroPink border-purple resize-none"
+                  className="form-input px-3 py-2 rounded-md placeholder:text-black outline-none border-x-2 bg-heroPink border-purple resize-none"
                   id="text"
                   rows={4}
                   cols={5}
@@ -84,10 +84,10 @@ const Contact = () => {
                   onChange={handleChange} />
               </div>
               <div className="flex flex-col space-between col-span-4 max-w-4xl items-center">
-                <button className="flex mt-3 hover:scale-105 duration-500 items-center p-2 text-lg" type="submit" name="action"><img className="h-4" src={rec} alt='rec'/>Hit Play</button>
+                <button className="flex mt-3 hover:scale-105 duration-500 items-center p-1 text-lg border-2 rounded-md pr-2" type="submit" name="action"><img className="h-4 mr-2" src={playButton} alt='rec'/>hit record</button>
               </div>
               <div className="flex flex-col col-span-4 items-center text-md gap-1">
-              <button className="cursor-pointer hover:text-heroSand duration-300"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liamdesroy@gmail.com</button>
+              <button className="cursor-pointer hover:text-heroSand duration-300 mt-10"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liamdesroy@gmail.com</button>
               <a className="hover:scale-105 duration-300" href="https://www.instagram.com/liamdesroy/"><img className="h-10 mt-3" src={insta} alt=""/></a>
               </div>
             </div>
