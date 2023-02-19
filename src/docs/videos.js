@@ -1,12 +1,12 @@
 //import images
-import april from '../images/April.png';
-import percival from '../images/Percival.png';
-import champion from '../images/champion.png';
-import us from '../images/modern-love-us.png';
-import potions from '../images/potions.png';
-import follow from '../images/modern-love-follow.png';
+import april from '../gifs/follow-you.gif';
+import percival from '../gifs/follow-you.gif';
+import champion from '../gifs/follow-you.gif';
+import us from '../gifs/follow-you.gif';
+import potions from '../gifs/follow-you.gif';
+import follow from '../gifs/follow-you.gif';
 import dio from '../gifs/DIO.gif';
-import mulimba from '../images/mulimba.png';
+import mulimba from '../gifs/follow-you.gif';
 
 const videos = [
   {image: champion, url:"https://vimeo.com/710751949", text: "Percival w/ Champion: Cam Operator; 1st Ac"},
