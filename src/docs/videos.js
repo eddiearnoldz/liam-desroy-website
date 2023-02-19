@@ -5,7 +5,7 @@ import champion from '../images/champion.png';
 import us from '../images/modern-love-us.png';
 import potions from '../images/potions.png';
 import follow from '../images/modern-love-follow.png';
-import dio from '../images/DIO.png';
+import dio from '../gifs/DIO.gif';
 import mulimba from '../images/mulimba.png';
 
 const videos = [

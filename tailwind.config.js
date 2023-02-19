@@ -8,7 +8,10 @@ module.exports = {
       'heroGrey': '#2e2b2f',
       'heroSand': '#ffe0a0'
     },
-    extend: {},
+    extend: { 
+      aspectRatio: {
+      '16/9': '16 / 9',
+    },},
   },
   plugins: [],
 }
