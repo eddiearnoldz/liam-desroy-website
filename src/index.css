@@ -6,7 +6,7 @@ body {
   font-family: 'Khand', sans-serif;
   background-image: url("./images/background-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-color: #eda4a4;
   color: #2e2b2f;
   padding: 0;
@@ -19,6 +19,5 @@ body {
     background-image: url("./images/background.png");
     width:100vw;
     height: 100vw;
-    background-size: contain;
   }
 }
