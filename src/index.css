@@ -12,12 +12,15 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  width:100vw;
+  height: 100vh;
 }
 
 @media screen and (min-width:768px) {
   body {
     background-image: url("./images/background.png");
     width:100vw;
-    height: 100vw;
+    height: 100vh;
+    background-size: cover;
   }
 }
