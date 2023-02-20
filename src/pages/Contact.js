@@ -84,7 +84,7 @@ const Contact = () => {
                   onChange={handleChange} />
               </div>
               <div className="flex flex-col space-between col-span-4 max-w-4xl items-center">
-                <button className="flex mt-3 hover:scale-105 duration-500 items-center p-1 text-lg border-2 rounded-md pr-2 pb-0" type="submit" name="action"><img className="h-4 mr-2" src={playButton} alt='rec'/>hit record</button>
+                <button className="flex mt-3 hover:scale-105 duration-500 items-center p-1 text-lg border-2 rounded-md pr-2 pb-0" type="submit" name="action"><img className="h-4 mr-2" src={playButton} alt='rec'/>hit play</button>
               </div>
               <div className="flex flex-col col-span-4 items-center text-md gap-1">
               <button className="cursor-pointer hover:text-heroSand duration-300 mt-10"onClick={() => window.location = 'mailto:liam@liamdesroy.com'}>liamdesroy@gmail.com</button>
