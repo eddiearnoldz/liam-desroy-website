@@ -12,10 +12,7 @@ const About = () => {
       <div className="content-center mx-3 mt-10 ">
         <img className="rounded-md w-96 m-auto" src={liam} alt='liam'/>
         <p className="text-center mt-10 md:text-xl text-lg">      
-          Award winning filmmaker
-        </p>
-        <p className="text-center md:text-xl text-lg">
-        from Yorkshire; based in London
+          Award winning filmmaker from Yorkshire
         </p>
         <p className="text-center md:text-xl mt-5 text-lg">
           Get in touch and I'll bang the kettle on 
